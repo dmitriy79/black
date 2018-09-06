@@ -22,7 +22,7 @@
 
 #define _ALIGN(x) __attribute__ ((aligned(x)))
 
-void xevan_hash(const char* input, char* output, uint32_t len)
+void xevan_hash(const char* input, char* output)
 {
 	uint32_t _ALIGN(64) hash[32]; // 128 bytes required
 	const int dataLen = 128;
