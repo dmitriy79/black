@@ -149,8 +149,7 @@ int blake2s_init_param( blake2s_state *S, const blake2s_param *P )
 	uint32_t *p = ( uint32_t * )( P );
 
 	/* IV XOR ParamBlock */
-	for( size_t i = 0; i < 8; ++i )
-		S->h[i] ^= load32( &p[i] );
+	
 
 	return 0;
 }
