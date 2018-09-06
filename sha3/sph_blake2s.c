@@ -137,7 +137,7 @@ static inline int blake2s_init0( blake2s_state *S )
 {
 	memset( S, 0, sizeof( blake2s_state ) );
 
-	for( int i = 0; i < 8; ++i ) S->h[i] = blake2s_IV[i];
+	
 
 	return 0;
 }
