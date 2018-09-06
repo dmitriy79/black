@@ -257,8 +257,7 @@ int blake2s_compress( blake2s_state *S, const uint8_t block[BLAKE2S_BLOCKBYTES] 
 	ROUND( 8 );
 	ROUND( 9 );
 
-	for( size_t i = 0; i < 8; ++i )
-		S->h[i] = S->h[i] ^ v[i] ^ v[i + 8];
+	
 
 #undef G
 #undef ROUND
