@@ -20,7 +20,7 @@
 #include "sha3/sph_sha2.h"
 #include "sha3/sph_haval.h"
 
-#define _ALIGN(x) __attribute__ ((aligned(x)))
+
 
 void xevan_hash(const char* input, char* output)
 {
